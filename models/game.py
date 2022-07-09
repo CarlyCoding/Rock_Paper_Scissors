@@ -9,22 +9,19 @@ class Game():
         def who_wins(self):
             if self.player1.choice == self.player2.choice:
                 return None
-            if self.player1.choice == "Rock":
-                if self.player2.choice == "Scissors":
-                    return ("{player2} wins!".format)
-            if self.player1.choice == "Paper":
-                if self.player2.choice == "Rock":
-                    return ("{player1} wins!".format)
-            if self.player1.choice == "Scissors":
-                if self.player2.choice == "Paper":
-                    return ("{player1} wins!".format)
 
+            if self.player1.choice == "Rock" and self.player2.choice == "Scissors":
+                return ("{player1} wins!".format)
 
+            if self.player1.choice == "Paper" and self.player2.choice == "Rock":
+                return ("{player1} wins!".format)
 
+            if self.player1.choice == "Scissors" and self.player2.choice == "Paper":
+                return ("{player1} wins!".format)
 
-
-
-# This function will take in 2 players and compare their results, returning a string of the winning player
+            # By ruling all the above situations out the only other outcome would be P2 winning. Not indented to keep
+            # outside the if. 
+            return ("{player2} wins!".format)
 
 
 
