@@ -9,7 +9,18 @@ class Game():
         def who_wins(self):
             if self.player1.choice == self.player2.choice:
                 return None
-            if self.player1
+            if self.player1.choice == "Rock":
+                if self.player2.choice == "Scissors":
+                    return ("{player2} wins!".format)
+            if self.player1.choice == "Paper":
+                if self.player2.choice == "Rock":
+                    return ("{player1} wins!".format)
+            if self.player1.choice == "Scissors":
+                if self.player2.choice == "Paper":
+                    return ("{player1} wins!".format)
+
+
+
 
 
 
