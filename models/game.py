@@ -11,17 +11,17 @@ class Game():
                 return None
 
             if self.player1.choice == "Rock" and self.player2.choice == "Scissors":
-                return ("{player1} wins!".format)
+                return (f'{self.player1.name} wins!')
 
             if self.player1.choice == "Paper" and self.player2.choice == "Rock":
-                return ("{player1} wins!".format)
+                return (f'{self.player1.name} wins!')
 
             if self.player1.choice == "Scissors" and self.player2.choice == "Paper":
-                return ("{player1} wins!".format)
+                return (f'{self.player1.name} wins!')
 
             # By ruling all the above situations out the only other outcome would be P2 winning. Not indented to keep
             # outside the if. 
-            return ("{player2} wins!".format)
+            return (f'{self.player2.name} wins!')
 
 
 

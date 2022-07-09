@@ -7,9 +7,12 @@ from models.player import Player
 
 @app.route('/home')
 def index():
-    return render_template('index.html')
+    return render_template('base.html')
 
-@app.route('<player1_choice>/<player2_choice>')
+# This line defines the URL route. 
+@app.route('/<player1_choice>/<player2_choice>')
+# As the class is only connected through the above the who_wins requires invoking on the game. This part
+# is where the game is "defined" with the writen code. Player and Game classes are given the variables here. 
 def rock_paper_scissors(player1_choice, player2_choice):
     player1 = Player("Stanley Kubrick", player1_choice)
     player2 = Player("Taika Waititi", player2_choice )
