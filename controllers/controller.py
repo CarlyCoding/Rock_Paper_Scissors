@@ -5,7 +5,7 @@ from models.player import Player
 
 
 
-@app.route('/home')
+@app.route('/')
 def index():
     return render_template('base.html')
 

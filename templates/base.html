@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
     <header>
     <h1>
-        This is the game!
-    </h1>
+        Welcome     to   
+    </h1>  
+    </header>
+    
+    <div class=" The_classes">
+        <h2>
+            <p>Rock 🪨  </p>
+            <p>Paper 🧻  </p>
+            <p>Scissors ✂️ </p>
+        </h2>
+    </div>
+
+    <div class="Sub header">
+        <h3>
+            The rules of the game
+        </h3>
+    </div>
+
     {% block content %}
 
     {% endblock content %}
-    </header>
-
 </body>
 </html>

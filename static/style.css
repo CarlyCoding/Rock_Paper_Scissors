@@ -1,0 +1,17 @@
+body {
+    background-color:ivory
+}
+
+header {
+    text-align: center;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.The_classes {
+    font-family: 'Rubik Moonrocks', cursive;
+    color: black
+}
+
+.Result {
+    font-family: 'Courier New', Courier, monospace;
+}
