@@ -8,10 +8,42 @@ header {
 }
 
 .The_classes {
+    text-align: center;
     font-family: 'Rubik Moonrocks', cursive;
-    color: black
+    color: black;
+    padding: 30px
+}
+
+.Sub_header {
+    text-align: center;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: black;
+    font-size: larger
+}
+
+.Rules ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'Just Another Hand', cursive;
+    font-size: xx-large
+}
+
+.Winner{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 40px;
+    font-family:'Rubik Moonrocks', cursive;
+    font-size: x-large;
 }
 
 .Result {
-    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-family:'Pacifico', cursive;
+    font-size: xx-large;
 }
+
+/* NOTES- Next time use lower case for html coding. Also a feild which accepts both cases for RPS choice in the URL would be needed.  */
+
+
+
+
