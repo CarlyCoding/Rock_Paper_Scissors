@@ -17,7 +17,7 @@ def rock_paper_scissors(player1_choice, player2_choice):
     player1 = Player("Stanley Kubrick", player1_choice)
     player2 = Player("Taika Waititi", player2_choice )
     game = Game(player1, player2)
-    return game.who_wins()
+    return render_template('result.html', result= game.who_wins())
 
 
 
